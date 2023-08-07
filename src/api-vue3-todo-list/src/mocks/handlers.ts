@@ -17,7 +17,7 @@ export function mockAddTodo() {
 
 export function mockRemoveTodo() {
   return rest.post(
-    "http://localhost/api/removeTodo",
+     "http://localhost/api/removeTodo",
     async (req, res, context) => {
       const { id } = await req.json();
       return res(
